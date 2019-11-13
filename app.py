@@ -12,7 +12,7 @@ def index():
     words_list = []
     new_list = ' '
     count = 0
-    while count < 7:
+    while count < 11:
         r_word  = random_word(word_list)
         words_list.append(r_word)
         count += 1
