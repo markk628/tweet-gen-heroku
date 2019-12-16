@@ -10,8 +10,8 @@ class MarkovChain(dict):
             self.create_markov(word_list)
 
     
-    def get_text(self, path = 'olivertwist.txt'):
-        text = scrubbed_words(path)
+    def get_text(self, wlist = 'olivertwist.txt'):
+        text = scrubbed_words(wlist)
     
         return text 
     

@@ -91,7 +91,7 @@ class LinkedList(object):
             self.head = new_node
                 
 
-    def find(self, quality):
+    def find(self, item):
         """Return an item from this linked list satisfying the given quality.
         TODO: Best case running time: O(1) Why and under what conditions? because if the Node we are looking for is the head Node, it wouldn't take long
         TODO: Worst case running time: O(n) because the program will have to read every Node's data in order until the wanted data is found"""
@@ -99,7 +99,7 @@ class LinkedList(object):
         # TODO: Check if node's data satisfies given quality function
         current_node = self.head
         while current_node is not None:
-            if quality(current_node.data):
+            if item == current_node.data:
                 return current_node.data
             current_node = current_node.next
         return None
